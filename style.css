@@ -1,9 +1,15 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
 .container, .container_2{
-    max-width: 50%;
+    width: 50%;
     height: 700px;
     /* border:1px solid blue; */
     background-color: rgb(235, 247, 238);
-    margin:auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -49,4 +55,29 @@ button:hover{
 }
 .hide-btn{
     display: none;
+}
+@media screen and (max-width:1000px) {
+    .container, .container_2{
+        width:75%;
+    }
+}
+@media screen and (max-width:700px) {
+    .container, .container_2{
+        width:90%;
+    }
+}
+@media screen and (max-width:550px) {
+    .img-container, .img-container-2{
+        max-width: 350px;
+        height:350px;
+    }
+}
+@media screen and (max-width:440px) {
+    .img-container, .img-container-2{
+        max-width: 300px;
+        height:300px;
+    }
+    img{
+        width:100%;
+    }
 }
